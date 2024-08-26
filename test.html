@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker Application</title>
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Expense Tracker Application</h1>
+        </header>
+    
+        <h2>Welcome to the Expense Tracker</h2>
+        <p>Manage your expenses efficiently and stay on top of your finances.</p>
+    
+        <h3>Registration Form</h3>
+        <form action="/submit_registration" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+    
+            <input type="submit" value="Register">
+        </form>
+    
+        <h3>User Information</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Paul</td>
+                    <td>john.paul@yahoo.com</td>
+                    <td>(+254) 012-3456</td>
+                </tr>
+                <tr>
+                    <td>Simon Peter</td>
+                    <td>simon.peter@gmail.com</td>
+                    <td>(+254) 012-6789</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <h3>Expense Tracker Logo</h3>
+        <img src="ETAP1.jpg" height="500" width="500" alt="Expense Tracker Logo">
+    
+        <footer>
+            <p>For more information, visit <a href="https://google.com" target="_blank">Google</a></p>
+        </footer>
+    </body>
+</html>
